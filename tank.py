@@ -45,5 +45,5 @@ t1.shot(t2)
 print()
 
 print(f'==выстрел {t2.model}==')
-t2.shot(t2)
+t2.shot(t1)
 print()
