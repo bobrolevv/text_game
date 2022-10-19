@@ -9,15 +9,15 @@ class Tank(object):
         self.damage = randint(min_damage, max_damage)   # урон, целое число случайное
         self.health = health                            # здоровье, целое число
 
-    def print_info(self):
+    def print_info(self):               # выводит на консоль информацию о танке
         print(f'{self.model} '
               f'имеет лобовую броню {self.armor} мм. '
               f'при {self.health} ед. здоровья '
               f'и урон в {self.damage} единиц.')
 
-    def shot(self, enemy):
+    def shot(self, enemy):              # метод стрельбы, принимает в качестве параметра принимает вражеский танк
 
-        def health_down():
+        def health_down():              # метод изменения уровня здоровья танка при попадании
             demage = self.damage
             enemy.health = enemy.health - (demage / enemy.armor)
             print(f'{enemy.model}: Командир, по экипажу {enemy.model} попали, '
