@@ -1,5 +1,6 @@
 from random import randint
 
+
 class Tank(object):
 
     def __init__(self, model: str, armor: int, min_damage: int,
@@ -32,8 +33,8 @@ class Tank(object):
                   f'{enemy.model} осталось {enemy.health} единиц здоровья')
 
 
-t1 = Tank('ПЕРВЫЙ',10,1,100,50)
-t2 = Tank('ВТОРОЙ',10,1,100,50)
+t1 = Tank('ПЕРВЫЙ', 10, 1, 100, 50)
+t2 = Tank('ВТОРОЙ', 10, 1, 100, 50)
 
 print('==начало игры==')
 t1.print_info()
